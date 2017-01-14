@@ -1,7 +1,11 @@
 void setup() {
-   size(200, 200);
-   background(100);
-   stroke(255);
-   ellipse(50, 50, 25, 25);
-   println("hello web!");
+   size(480, 120);
+}
+void draw() {
+   if (mousePressed) {
+      fill(0);
+   } else {
+      fill(255);
+   }
+   ellipse(mouseX, mouseY, 80, 80);
 }
